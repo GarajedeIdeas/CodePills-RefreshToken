@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-6 offset-3">
+        <h1 class="my-5">Formulario de registro</h1>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" formControlName="email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
